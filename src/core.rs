@@ -19,6 +19,7 @@ pub fn options_post_processing(options: &ArgParse) -> Result<()> {
 
     makedirs(&output_folder)?;
     *OUTPUT_FOLDER.write().unwrap() = Some(output_folder);
+
     Ok(())
 }
 
